@@ -1,0 +1,195 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.contact-section {
+  max-width: 900px;
+  margin: 120px auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: var(--text-main);
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  color: var(--text-sub);
+  margin-bottom: 50px;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: stretch;
+}
+
+.contact-links {
+  border: 1px solid var(--card-border);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--shadow);
+  border-radius: 30px;
+
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+
+  height: 100%;
+}
+
+.contact-links a,
+.whatsapp-box {
+  width: 90%;
+  margin: 0 auto;
+
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 15px 25px;
+  border-radius: 50px;
+
+  background: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--card-border);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.whatsapp-box{
+  background: #25d366;
+  color: white;
+}
+
+.contact-links a:hover {
+  background: var(--hover-color);
+  color: white;
+  font-size: 25px;
+  transform: translateY(-4px) scale(1.05);
+  border-color: transparent;
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.25),
+    0 0 15px var(--hover-color);
+}
+
+.whatsapp-box {
+  cursor: default;
+  font-weight: 700;
+}
+
+.contact-links a{
+  background: white;
+  color: var(--hover-color);;
+}
+
+.mail-options {
+  height: 100%;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--shadow);
+  border-radius: 30px;
+  padding: 30px;
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.static-contact {
+  width: 90%;
+  margin: 0 auto 22px;
+  padding: 14px 20px;
+  border-radius: 50px;
+  background: transparent;
+  border: 1px solid var(--card-border);
+  font-weight: 600;
+  text-align: center;
+}
+
+.mail-options div {
+  width: 90%;
+  margin: 0 auto 18px;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  color: var(--text-sub);
+}
+
+.mail-options input,
+.mail-options textarea {
+  margin-top: 6px;
+  padding: 14px 18px;
+  border-radius: 50px;
+  background: transparent;
+  border: 1px solid var(--card-border);
+  color: var(--text-main);
+  font-size: 0.95rem;
+  outline: none;
+  border-color: #4facfe;
+  box-shadow: 0 0 10px rgba(79, 172, 254, 0.4);
+}
+
+.mail-options textarea {
+  border-radius: 22px;
+  resize: none;
+  border-color: #4facfe;
+  box-shadow: 0 0 10px rgba(79, 172, 254, 0.4);
+  min-height: 110px;
+}
+
+.mail-options input:focus,
+.mail-options textarea:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 10px rgba(79, 172, 254, 0.4);
+}
+
+.send-btn {
+  width: 90%;
+  margin: 10px auto 0;
+  padding: 14px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: #fff;
+  transition: all 0.35s ease;
+}
+
+.send-btn:hover {
+  transform: translateY(-4px);
+}
+
+
+.whatsapp-box a:hover{
+  background: black;
+  color: white;
+  font-size: 25px;
+  transform: translateY(-4px) scale(1.05);
+  border-color: transparent;
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.25),
+    0 0 15px var(--hover-color);  
+}
+
+@media (max-width: 900px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
