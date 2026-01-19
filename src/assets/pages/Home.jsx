@@ -1,10 +1,10 @@
 import React from "react";
 import About from "./About";
-import Skills from "./skills";
+import Skills from "./Skills";
 import Achievments from "./Achievments";
-import Work from "./work";
+import Work from "./Work";
 import Contact from "./Contact";
-import Projects from "./projects";
+import Projects from "./Projects";
 
 const Home = () => {
   return (
