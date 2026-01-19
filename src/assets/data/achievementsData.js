@@ -1,8 +1,5 @@
-// IMAGES
 import winnerImg from "../src/Winner Coding Contest.jpg";
 import hackathonImg from "../src/the_real_mavericks.jpg";
-
-// CERTIFICATES (PDFs)
 import cppCert from "../src/Learn Advanced C++.pdf";
 import webCert from "../src/Web Certificate.pdf";
 import pythonCert from "../src/Python Certificate.pdf";

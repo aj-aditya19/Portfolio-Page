@@ -6,8 +6,6 @@ import robotaim from "../src/coding.json";
 const About = () => {
   return (
     <div className="about-section">
-      {/* <div className="heading">About Me</div> */}
-
       <div className="container1 card">
         <div className="person">
           <div className="circle">AJ</div>
@@ -24,7 +22,6 @@ const About = () => {
 
       <div className="container-all">
         <div className="container2 card">
-          <h3>Introduction</h3>
           <p>
             I love coding, learning new technologies, and building projects that
             make life easier. My goal is to create apps that are useful and

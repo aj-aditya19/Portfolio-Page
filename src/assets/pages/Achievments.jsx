@@ -11,7 +11,6 @@ const Achievements = () => {
       <div className="heading">Achievements</div>
 
       <div className="achievements-container">
-        {/* LEFT */}
         <div className="achievements-left">
           <div className="timeline-line"></div>
 

@@ -19,7 +19,11 @@ const Projects = () => {
         ))}
       </div>
       <div className="view-more">
-        <a href="#" className="view-more-btn">
+        <a
+          target="main"
+          href="https://github.com/aj-aditya19?tab=repositories"
+          className="view-more-btn"
+        >
           View More
         </a>
       </div>

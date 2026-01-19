@@ -3,7 +3,7 @@ import About from "./About";
 import Skills from "./skills";
 import Achievments from "./Achievments";
 import Work from "./work";
-import Contact from "./contact";
+import Contact from "./Contact";
 import Projects from "./projects";
 
 const Home = () => {

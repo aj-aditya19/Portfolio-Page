@@ -22,11 +22,9 @@ const Contact = () => {
             </a>
           ))}
 
-          {/* WHATSAPP STATIC */}
           <div className="whatsapp-box">WhatsApp: +91 9458970585</div>
         </div>
 
-        {/* RIGHT SIDE – MAIL FORM */}
         <div className="mail-options">
           <div className="static-contact">
             📧 Gmail: <strong>ajaditya1908@gmail.com</strong>

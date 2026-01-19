@@ -2,7 +2,7 @@
   --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   --text-main: #1e293b;
   --text-sub: #475569;
-  --accent: #2563eb; /* Royal Blue */
+  --accent: #2563eb;
   --card-bg: rgba(255, 255, 255, 0.7);
   --card-border: rgba(255, 255, 255, 0.4);
   --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
@@ -43,7 +43,6 @@ body {
   border: 1px solid var(--card-border);
   border-radius: 20px;
   padding: 25px;
-  /* box-shadow: var(--shadow); */
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -126,6 +125,7 @@ p {
   line-height: 1.8;
   font-size: 1.05rem;
 }
+
 
 @media (max-width: 768px) {
   .container1 {
