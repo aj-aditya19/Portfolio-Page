@@ -1,36 +1,46 @@
+/* ===== Achievements Section ===== */
+
 .achievements-section {
-  max-width: 1100px;
-  margin: 100px auto;
-  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
 }
 
-.heading {
-  font-size: 2.6rem;
+.achievements-section .heading {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
   font-weight: 800;
   text-align: center;
-  color: var(--text-main);
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 3rem;
 }
+
+/* ===== Achievements Container ===== */
 
 .achievements-container {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  gap: 50px;
-  margin-top: 60px;
+  gap: 3rem;
+  align-items: start;
 }
+
+/* ===== Achievements Left ===== */
 
 .achievements-left {
   position: relative;
-  padding-left: 35px;
+  padding-left: 2.5rem;
 }
 
 .timeline-line {
   position: absolute;
-  left: 10px;
+  left: 0.5rem;
   top: 0;
   bottom: 0;
-  width: 4px;
-  background: var(--accent);
-  opacity: 0.25;
+  width: 2px;
+  background: var(--gradient-primary);
+  opacity: 0.4;
   border-radius: 10px;
 }
 
@@ -38,30 +48,30 @@
   position: relative;
   display: flex;
   align-items: center;
-  gap: 25px;
-  margin-bottom: 55px;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .photo-achievement::before {
-  content: "";
+  content: '';
   position: absolute;
-  left: -26px;
+  left: -1.75rem;
   width: 12px;
   height: 12px;
-  background: var(--accent);
+  background: var(--accent-primary);
   border-radius: 50%;
-  box-shadow: 0 0 10px var(--accent);
+  box-shadow: 0 0 10px var(--accent-primary);
 }
 
 .photo-circle {
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
   flex-shrink: 0;
-  border-radius: 10%;
+  border-radius: 12px;
   overflow: hidden;
-  border: 4px solid var(--accent);
-  background: var(--card-bg);
-  box-shadow: var(--shadow);
+  border: 3px solid var(--accent-primary);
+  background-color: var(--card-bg);
+  box-shadow: var(--shadow-lg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,86 +86,100 @@
 .photo-placeholder {
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--text-sub);
+  color: var(--text-secondary);
 }
 
 .photo-text {
-  max-width: 420px;
+  flex: 1;
 }
 
 .photo-text h3 {
-  margin: 0 0 10px 0;
-  font-size: 1.55rem;
-  color: var(--text-main);
+  margin: 0 0 0.75rem 0;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  font-weight: 700;
 }
 
 .photo-text p {
   margin: 0;
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   line-height: 1.6;
-  color: var(--text-sub);
+  color: var(--text-secondary);
 }
- 
+
+/* ===== Achievements Right ===== */
+
 .achievements-right {
-  top: 110px;
+  position: sticky;
+  top: 100px;
   height: fit-content;
 }
 
 .achievements-right h3 {
-  font-size: 1.8rem;
-  margin-bottom: 25px;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
   text-align: center;
-  color: var(--text-main);
+  color: var(--text-primary);
+  font-weight: 700;
 }
+
+/* ===== Certificates List ===== */
 
 .certificates-list {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 1rem;
 }
 
+/* ===== Certificate Card ===== */
+
 .certificate-card {
-  background: var(--card-bg);
-  backdrop-filter: var(--glass-blur);
-  border: 1px solid var(--card-border);
-  padding: 16px 22px;
-  border-radius: 16px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  padding: 1.25rem;
+  border-radius: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
   transition: all 0.3s ease;
 }
 
 .certificate-card:hover {
-  background: var(--accent);
+  background: var(--gradient-primary);
   transform: translateX(8px);
+  box-shadow: var(--shadow-lg);
+  border-color: transparent;
 }
 
 .certificate-card p {
   margin: 0;
   font-weight: 600;
-  color: var(--text-main);
+  color: var(--text-primary);
+  flex: 1;
 }
 
 .certificate-card:hover p {
-  color: #fff;
+  color: white;
 }
 
 .certificate-card a,
 .disabled-btn {
-  padding: 7px 18px;
-  border-radius: 8px;
-  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
   font-weight: 700;
   text-decoration: none;
-  background: var(--accent);
-  color: #fff;
+  background: var(--accent-primary);
+  color: white;
   transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
 }
 
 .certificate-card:hover a {
-  background: #fff;
-  color: var(--accent);
+  background: white;
+  color: var(--accent-primary);
 }
 
 .disabled-btn {
@@ -163,25 +187,169 @@
   cursor: not-allowed;
 }
 
+/* ===== Responsive Design ===== */
+
 @media (max-width: 900px) {
+  .achievements-section {
+    padding: 3rem 1rem;
+  }
+
   .achievements-container {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .achievements-right {
     position: relative;
     top: 0;
-    margin-top: 50px;
+    margin-top: 2rem;
+  }
+
+  .photo-circle {
+    width: 140px;
+    height: 140px;
+  }
+
+  .photo-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .photo-text p {
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 600px) {
+  .achievements-section {
+    padding: 2rem 0.75rem;
+  }
+
+  .achievements-section .heading {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .achievements-container {
+    gap: 1.5rem;
+  }
+
+  .achievements-left {
+    padding-left: 2rem;
+  }
+
   .photo-achievement {
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-direction: row;
+  }
+
+  .photo-achievement::before {
+    left: -1.5rem;
+  }
+
+  .photo-circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .photo-text h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .photo-text p {
+    font-size: 0.85rem;
+  }
+
+  .achievements-right h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .certificates-list {
+    gap: 0.75rem;
+  }
+
+  .certificate-card {
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .certificate-card p {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .certificate-card a,
+  .disabled-btn {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .achievements-section {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .achievements-section .heading {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .achievements-left {
+    padding-left: 1.5rem;
+  }
+
+  .photo-achievement {
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
     flex-direction: column;
     align-items: flex-start;
   }
 
   .photo-achievement::before {
-    left: -22px;
+    left: -1.25rem;
+    width: 10px;
+    height: 10px;
+  }
+
+  .photo-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .photo-text h3 {
+    font-size: 0.95rem;
+  }
+
+  .photo-text p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .timeline-line {
+    left: 0.35rem;
+  }
+
+  .achievements-right h3 {
+    font-size: 1.1rem;
+  }
+
+  .certificate-card {
+    padding: 0.75rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .certificate-card p {
+    font-size: 0.85rem;
+  }
+
+  .certificate-card a,
+  .disabled-btn {
+    padding: 0.35rem 0.6rem;
+    font-size: 0.7rem;
   }
 }

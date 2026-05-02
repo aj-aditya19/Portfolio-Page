@@ -2,50 +2,62 @@ import React from "react";
 import contactLinks from "../data/contactData";
 import "../styles/Contact.css";
 
+const socialDescriptions = {
+  LinkedIn: [
+    "Professional profile and career updates.",
+    "Connect for opportunities and collaborations.",
+  ],
+  GitHub: [
+    "Open-source projects and code samples.",
+    "Explore repositories, commits, and experiments.",
+  ],
+  X: [
+    "Thoughts on tech and learning journey.",
+    "Quick updates, ideas, and community posts.",
+  ],
+};
+
 const Contact = () => {
   return (
     <div className="contact-section" id="contact">
       <h2>Let's Connect</h2>
-      <p>Feel free to reach out via any of my profiles below!</p>
+      <p>Reach out through any channel below.</p>
 
-      <div className="contact-container">
-        <div className="contact-links">
-          {contactLinks.map((contact, index) => (
+      <div className="contact-info-grid">
+        <div className="contact-info-card">
+          <h3>Email</h3>
+          <p>ajaditya1908@gmail.com</p>
+        </div>
+        <div className="contact-info-card">
+          <h3>Phone</h3>
+          <p>+91 9458970585</p>
+        </div>
+        <div className="contact-info-card">
+          <h3>Location</h3>
+          <p>Dehradun, Uttarakhand, 248007</p>
+        </div>
+      </div>
+
+      <div className="social-grid">
+        {contactLinks.map((contact, index) => {
+          const lines = socialDescriptions[contact.name] || [
+            "Connect with me.",
+            "Let us build something impactful.",
+          ];
+          return (
             <a
               key={index}
               href={contact.link}
               target="_blank"
               rel="noopener noreferrer"
-              style={{ "--hover-color": contact.color }}
+              className="social-card"
             >
-              {contact.name}
+              <h3>{contact.name}</h3>
+              <p>{lines[0]}</p>
+              <p>{lines[1]}</p>
             </a>
-          ))}
-
-          <div className="whatsapp-box">WhatsApp: +91 9458970585</div>
-        </div>
-
-        <div className="mail-options">
-          <div className="static-contact">
-            📧 Gmail: <strong>ajaditya1908@gmail.com</strong>
-          </div>
-          <div>
-            <label>Name</label>
-            <input type="text" placeholder="Ditya" />
-          </div>
-
-          <div>
-            <label>Email</label>
-            <input type="email" placeholder="mail@gmail.com" />
-          </div>
-
-          <div>
-            <label>Message</label>
-            <textarea placeholder="Type your message here..." />
-          </div>
-
-          <button className="send-btn">Send Message</button>
-        </div>
+          );
+        })}
       </div>
     </div>
   );

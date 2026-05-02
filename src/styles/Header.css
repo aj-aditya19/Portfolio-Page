@@ -1,0 +1,246 @@
+/* ===== Header Styles ===== */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--card-bg);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+/* ===== Logo ===== */
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.logo:hover {
+  transform: scale(1.05) rotate(5deg);
+}
+
+.logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* ===== Navigation ===== */
+
+.navbar {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.95rem;
+  position: relative;
+  transition: color 0.3s ease;
+  text-transform: capitalize;
+}
+
+.nav-link:hover {
+  color: var(--accent-primary);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gradient-primary);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ===== Header Actions ===== */
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.theme-toggle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background-color: var(--accent-primary);
+  color: white;
+  transform: rotate(20deg) scale(1.05);
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2;
+}
+
+/* ===== Menu Toggle (Mobile) ===== */
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  width: 30px;
+  height: 24px;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.menu-toggle span {
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-primary);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(12px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-10px);
+}
+
+/* ===== Responsive Design ===== */
+
+@media (max-width: 768px) {
+  .header-container {
+    height: 60px;
+  }
+
+  .logo {
+    width: 45px;
+    height: 45px;
+    font-size: 1.1rem;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .navbar.active {
+    max-height: 500px;
+  }
+
+  .nav-link {
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    text-align: left;
+  }
+
+  .nav-link::after {
+    bottom: 0;
+    left: -1rem;
+    width: 0;
+    height: 3px;
+    opacity: 0;
+  }
+
+  .nav-link:hover::after {
+    width: 0;
+  }
+
+  .nav-link:active {
+    background-color: var(--bg-tertiary);
+    border-radius: 8px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .theme-toggle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .theme-toggle svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding: 0 0.75rem;
+    height: 56px;
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .navbar {
+    top: 56px;
+  }
+
+  .theme-toggle {
+    width: 38px;
+    height: 38px;
+  }
+}

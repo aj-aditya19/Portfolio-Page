@@ -1,9 +1,5 @@
 import winnerImg from "../src/Winner Coding Contest.jpg";
 import hackathonImg from "../src/the_real_mavericks.jpg";
-import cppCert from "../src/Learn Advanced C++.pdf";
-import webCert from "../src/Web Certificate.pdf";
-import pythonCert from "../src/Python Certificate.pdf";
-import cyberCert from "../src/NPTEL Cyber Security and Privacy.pdf";
 
 const photoAchievements = [
   {
@@ -17,25 +13,17 @@ const photoAchievements = [
     title: "1st Runner in Hackathon",
     description: "Got 2nd position in SIH Inter-College Selection.",
   },
-];
-
-const certificateAchievements = [
   {
-    title: "Full Stack Developer Certificate",
-    link: webCert,
+    photo: null,
+    title: "College Hackathon Winner",
+    description: "Won internal college hackathon and secured top prize.",
   },
   {
-    title: "Advanced C++ Certificate",
-    link: cppCert,
-  },
-  {
-    title: "Python Certificate",
-    link: pythonCert,
-  },
-  {
-    title: "Cyber Security and Privacy Certificate",
-    link: cyberCert,
+    photo: null,
+    title: "National Hackathon Participant",
+    description:
+      "Participated in 3 national-level hackathons representing the college.",
   },
 ];
 
-export { photoAchievements, certificateAchievements };
+export { photoAchievements };

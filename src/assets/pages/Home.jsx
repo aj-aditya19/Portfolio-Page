@@ -1,21 +1,35 @@
 import React from "react";
 import About from "./About";
 import Skills from "./Skills";
-import Achievments from "./Achievments";
-import Work from "./Work";
-import Contact from "./Contact";
 import Projects from "./Projects";
+import Education from "./Education";
+import ProfessionalCertificates from "./ProfessionalCertificates";
+import Contact from "./Contact";
+import Footer from "../../components/Footer";
 
 const Home = () => {
   return (
-    <div>
-      <About />
-      <Skills />
-      <Projects />
-      <Achievments />
-      {/* <Work /> */}
-      <Contact />
-    </div>
+    <main>
+      <section id="about">
+        <About />
+      </section>
+      <section id="skills">
+        <Skills />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="education">
+        <Education />
+      </section>
+      <section id="certificates">
+        <ProfessionalCertificates />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
+      <Footer />
+    </main>
   );
 };
 

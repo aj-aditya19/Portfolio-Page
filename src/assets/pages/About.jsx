@@ -1,36 +1,63 @@
 import React from "react";
+import { resumePdf } from "../data/certificatesData";
 import "../styles/About.css";
-import Lottie from "lottie-react";
-import robotaim from "../src/coding.json";
 
 const About = () => {
   return (
     <div className="about-section">
-      <div className="container1 card">
-        <div className="person">
-          <div className="circle">AJ</div>
-          <div className="p">
-            <div className="name">Aditya Jaiswal</div>
-            <div className="title">Web Developer</div>
-          </div>
-        </div>
-        <div className="quote">
-          I just can't code Only
-          <h className="makeit"> I'll make it</h>
-        </div>
+      {/* Header with Name and Last Updated */}
+      <div className="about-header">
+        <h1 className="profile-name">Aditya Jaiswal</h1>
+        <p className="profile-title">Full Stack Web Developer & Designer</p>
       </div>
 
-      <div className="container-all">
-        <div className="container2 card">
+      {/* Main About Content */}
+      <div className="about-content">
+        <div className="about-text">
+          <h2>About Me</h2>
           <p>
-            I love coding, learning new technologies, and building projects that
-            make life easier. My goal is to create apps that are useful and
-            visually appealing.
+            I'm a passionate full-stack web developer and designer with a keen
+            interest in building scalable, user-friendly applications. My
+            expertise spans modern web technologies including React, Node.js,
+            TypeScript, and cloud services.
           </p>
+
+          <p>
+            As a curious builder with a passion for turning ideas into real
+            products, I focus on crafting experiences that solve problems, spark
+            curiosity, and (hopefully) make someone's day a little better. I'm
+            not just about writing code—I craft experiences that are intuitive,
+            visually appealing, and genuinely useful.
+          </p>
+
+          <p>
+            I'm deeply interested in AI-powered solutions, full-stack
+            development, and creating technology that feels human. Always open
+            to conversations about new ideas, collaborations, and building
+            things that matter.
+          </p>
+
+          <div className="about-cta">
+            <a href="#contact" className="cta-button">
+              Let's Connect
+            </a>
+            <a
+              href={resumePdf}
+              download="Aditya_CV_Intern.pdf"
+              className="cta-button resume-download"
+            >
+              Download Resume
+            </a>
+          </div>
         </div>
-        <div className="container3 card">
-          <div className="lottie-box">
-            <Lottie animationData={robotaim} loop={true} />
+
+        <div className="about-image">
+          <div className="image-placeholder">
+            <img
+              src="/images/myself.png"
+              alt="Aditya Jaiswal"
+              className="profile-image"
+            />
           </div>
         </div>
       </div>

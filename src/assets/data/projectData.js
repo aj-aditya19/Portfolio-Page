@@ -1,48 +1,29 @@
 // This file contains project data dynamically
 
-import food_delivery from "../src/Food-Delivery Image.png";
-import map from "../src/map.png";
-import cloud from "../src/cloud.png";
+import bingoGame from "/images/bingogame_landing_page.png";
+import medisetu from "/images/medi_landing_page.png";
+import apnastay from "/images/apnastay_landing_page.png";
+
 const projects = [
   {
-    image: map,
-    name: "Live Location",
+    image: bingoGame,
+    name: "Bingo Game",
     about:
-      "A app in which users can share their live location to their friends.",
-    link: "https://github.com/aj-aditya19/Live-Location-Share-Project",
-  },
-  // {
-  //   image: "",
-  //   name: "Dry-Clean Projecct",
-  //   about:
-  //     "A project in which a user can access dry cleaning services by simple access.",
-  //   link: "#",
-  // },
-  // {
-  //   image: "",
-  //   name: "College Site",
-  //   about:
-  //     "A college website in which students can access information about courses, events, and faculty.",
-  //   link: "#",
-  // },
-  // {
-  //   image: "",
-  //   name: "Email-2-Whatsapp",
-  //   about:
-  //     "A python project in which emails are automatically forwarded to WhatsApp.",
-  //   link: "#",
-  // },
-  {
-    image: cloud,
-    name: "Mini Cloud",
-    about: "A Mini Cloud project for storing and managing files.",
-    link: "https://github.com/aj-aditya19/Mini-Cloud-",
+      "An interactive Bingo game application built with modern web technologies.",
+    link: "https://bingogame-web-t73z.vercel.app/",
   },
   {
-    image: food_delivery,
-    name: "Food Delivery Project",
-    about: "The simple UI/UX design for a food delivery application.",
-    link: "https://github.com/aj-aditya19/Food-Delivery-React.js-YouTube",
+    image: medisetu,
+    name: "Medisetu",
+    about: "A healthcare platform providing medical services and information.",
+    link: "https://medisetu-smoky.vercel.app/",
+  },
+  {
+    image: apnastay,
+    name: "Apnastay",
+    about:
+      "A property rental and accommodation platform for finding your perfect stay.",
+    link: "https://apnastay-s5fk.onrender.com/",
   },
 ];
 
