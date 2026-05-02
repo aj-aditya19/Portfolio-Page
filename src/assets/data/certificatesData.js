@@ -1,9 +1,9 @@
-import webCert from "../../../documents/Web Certificate.pdf";
-import cppCert from "../../../documents/Learn Advanced C++.pdf";
-import pythonCert from "../../../documents/Python Certificate.pdf";
-import cyberCert from "../../../documents/NPTEL Cyber Security and Privacy.pdf";
-import dockerCert from "../../../documents/Docker Certificate.pdf";
-import resumePdf from "../../../documents/Aditya_CV Intern.pdf";
+const webCert = "/documents/Web%20Certificate.pdf";
+const cppCert = "/documents/Learn%20Advanced%20C++.pdf";
+const pythonCert = "/documents/Python%20Certificate.pdf";
+const cyberCert = "/documents/NPTEL%20Cyber%20Security%20and%20Privacy.pdf";
+const dockerCert = "/documents/Docker%20Certificate.pdf";
+const resumePdf = "/documents/Aditya_CV.pdf";
 
 const certificateAchievements = [
   {

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useTheme } from "../context/ThemeContext";
+import profileAssets from "../assets/data/profileAssets";
 import "../styles/Header.css";
 
 const Header = () => {
@@ -19,7 +20,12 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <div className="logo">
-          <img src="/images/AJ_logo.png" alt="AJ Logo" className="logo-image" />
+          <img
+            src={profileAssets.logo}
+            alt="AJ Logo"
+            className="logo-image"
+            onError={(e) => (e.target.style.display = "none")}
+          />
         </div>
 
         <nav className={`navbar ${isMenuOpen ? "active" : ""}`}>

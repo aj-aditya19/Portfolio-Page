@@ -1,5 +1,6 @@
 import React from "react";
 import { resumePdf } from "../data/certificatesData";
+import profileAssets from "../data/profileAssets";
 import "../styles/About.css";
 
 const About = () => {
@@ -43,7 +44,7 @@ const About = () => {
             </a>
             <a
               href={resumePdf}
-              download="Aditya_CV_Intern.pdf"
+              download="Aditya_CV.pdf"
               className="cta-button resume-download"
             >
               Download Resume
@@ -54,9 +55,10 @@ const About = () => {
         <div className="about-image">
           <div className="image-placeholder">
             <img
-              src="/images/myself.png"
+              src={profileAssets.profileImage}
               alt="Aditya Jaiswal"
               className="profile-image"
+              onError={(e) => (e.target.style.display = "none")}
             />
           </div>
         </div>

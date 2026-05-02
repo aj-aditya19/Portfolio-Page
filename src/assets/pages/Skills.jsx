@@ -61,64 +61,63 @@ const skillGroups = [
       },
     ],
   },
-  {
-    title: "Technologies & Tools",
-    items: [
-      {
-        name: "Postman",
-        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
-      },
-      {
-        name: "GitHub",
-        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-      },
-      {
-        name: "Git",
-        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-      },
-      {
-        name: "VS Code",
-        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
-      },
-      {
-        name: "Canva",
-        img: "https://cdn.simpleicons.org/canva/00C4CC",
-      },
-      {
-        name: "Flutter",
-        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
-      },
-    ],
-  },
 ];
 
 const languages = ["JavaScript", "Python", "Java", "C++", "SQL"];
 
+const technologies = ["Docker", "Git", "GitHub", "VS Code", "Postman", "Linux"];
+
+// ✅ Flattened tools (important fix)
+const tools = [
+  {
+    name: "Postman",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+  },
+  {
+    name: "GitHub",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+  },
+  {
+    name: "Git",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+  },
+  {
+    name: "VS Code",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+  },
+  {
+    name: "Canva",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg",
+  },
+  {
+    name: "Flutter",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
+  },
+  {
+    name: "Docker",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+  },
+];
+
 const Skills = () => {
   return (
     <div className="skills-section">
+      {/* Header */}
       <div className="section-header">
         <h2>Skills & Technologies</h2>
         <div className="header-line"></div>
       </div>
+
+      {/* Skill Groups */}
       <div className="skills-grid">
         {skillGroups.map((group) => (
-          <div
-            className={`skill-card ${group.title.includes("Technologies") ? "technologies" : ""}`}
-            key={group.title}
-          >
+          <div className="skill-card" key={group.title}>
             <h3>{group.title}</h3>
+
             <div className="skill-list">
               {group.items.map((s) => (
-                <div
-                  className={`skill-item ${group.title.includes("Technologies") ? "horizontal" : ""}`}
-                  key={s.name}
-                >
-                  {s.img ? (
-                    <img src={s.img} alt={s.name} />
-                  ) : (
-                    <div className="skill-icon">{s.name[0]}</div>
-                  )}
+                <div className="skill-item" key={s.name}>
+                  <img src={s.img} alt={s.name} />
                   <span className="skill-name">{s.name}</span>
                 </div>
               ))}
@@ -127,13 +126,31 @@ const Skills = () => {
         ))}
       </div>
 
+      {/* Tools Section (LIKE LANGUAGES) */}
+      <div className="languages-section">
+        <h3>Technologies & Tools</h3>
+        <div className="languages-grid">
+          {tools.map((tool) => (
+            <div key={tool.name} className="language-card">
+              <img
+                src={tool.img}
+                alt={tool.name}
+                className="language-icon-img"
+              />
+              <div className="language-name">{tool.name}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Languages */}
       <div className="languages-section">
         <h3>Languages</h3>
         <div className="languages-grid">
-          {languages.map((l) => (
-            <div key={l} className="language-card">
-              <div className="language-icon">{l[0]}</div>
-              <div className="language-name">{l}</div>
+          {languages.map((lang) => (
+            <div key={lang} className="language-card">
+              <div className="language-icon">{lang[0]}</div>
+              <div className="language-name">{lang}</div>
             </div>
           ))}
         </div>
