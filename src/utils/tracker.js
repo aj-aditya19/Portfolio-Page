@@ -6,9 +6,7 @@ export async function trackVisit(payload = {}) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
     });
-  } catch (err) {
   } catch (err) {}
-  }
 }
 
 export async function getCount() {
