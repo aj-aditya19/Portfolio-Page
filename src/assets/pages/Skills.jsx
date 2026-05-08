@@ -74,6 +74,10 @@ const tools = [
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
   },
   {
+    name: "Ubuntu",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg",
+  },
+  {
     name: "GitHub",
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
   },
