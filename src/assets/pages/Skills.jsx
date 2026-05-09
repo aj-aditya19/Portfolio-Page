@@ -35,8 +35,8 @@ const skillGroups = [
         img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
       },
       {
-        name: "Python",
-        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+        name: "Flask",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg",
       },
       {
         name: "Django",
@@ -64,18 +64,11 @@ const skillGroups = [
 ];
 
 const languages = ["JavaScript", "Python", "Java", "C++", "SQL"];
-
 const technologies = ["Docker", "Git", "GitHub", "VS Code", "Postman", "Linux"];
-
-// ✅ Flattened tools (important fix)
 const tools = [
   {
     name: "Postman",
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
-  },
-  {
-    name: "Ubuntu",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg",
   },
   {
     name: "GitHub",
@@ -106,13 +99,10 @@ const tools = [
 const Skills = () => {
   return (
     <div className="skills-section">
-      {/* Header */}
       <div className="section-header">
         <h2>Skills & Technologies</h2>
         <div className="header-line"></div>
       </div>
-
-      {/* Skill Groups */}
       <div className="skills-grid">
         {skillGroups.map((group) => (
           <div className="skill-card" key={group.title}>
@@ -129,8 +119,6 @@ const Skills = () => {
           </div>
         ))}
       </div>
-
-      {/* Tools Section (LIKE LANGUAGES) */}
       <div className="languages-section">
         <h3>Technologies & Tools</h3>
         <div className="languages-grid">
@@ -146,8 +134,6 @@ const Skills = () => {
           ))}
         </div>
       </div>
-
-      {/* Languages */}
       <div className="languages-section">
         <h3>Languages</h3>
         <div className="languages-grid">

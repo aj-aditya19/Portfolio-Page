@@ -1,5 +1,3 @@
-// This file contains project data dynamically
-
 import bingoGame from "/images/bingogame_landing_page.png";
 import medisetu from "/images/medi_landing_page.png";
 import apnastay from "/images/apnastay_landing_page.png";

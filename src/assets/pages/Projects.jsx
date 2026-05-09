@@ -5,7 +5,10 @@ import "../styles/Projects.css";
 const Projects = () => {
   return (
     <div className="projects-section">
-      <div className="heading">My Projects</div>
+      <div className="section-header">
+        <h2>My Projects</h2>
+        <div className="header-line"></div>
+      </div>
       <div className="projects-container">
         {projects.map((project, index) => (
           <div className="project-card" key={index}>

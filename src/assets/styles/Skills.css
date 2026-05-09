@@ -1,4 +1,3 @@
-/* Skills Section Styles */
 .skills-section {
   width: 100%;
   max-width: 1200px;
@@ -28,7 +27,6 @@
   background: linear-gradient(90deg, var(--accent-primary) 0%, transparent 100%);
 }
 
-/* Skills Container */
 .skills-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -36,7 +34,6 @@
   margin-bottom: 3rem;
 }
 
-/* Skill Card */
 .skill-card {
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
@@ -95,7 +92,6 @@
   gap: 0.5rem;
 }
 
-/* New grid for skills with image above name */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -123,7 +119,6 @@
   filter: none;
 }
 
-/* Horizontal layout for Technologies group */
 .skill-card.technologies .skill-list {
   display: flex;
   flex-wrap: wrap;
@@ -173,7 +168,6 @@
   transform: scale(1.05);
 }
 
-/* Languages Section */
 .languages-section {
   margin-top: 3rem;
 }
@@ -227,7 +221,6 @@
   color: var(--text-primary);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .skills-section {
     padding: 2.5rem 1rem;

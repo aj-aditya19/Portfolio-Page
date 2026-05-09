@@ -6,13 +6,11 @@ import "../styles/About.css";
 const About = () => {
   return (
     <div className="about-section">
-      {/* Header with Name and Last Updated */}
       <div className="about-header">
         <h1 className="profile-name">Aditya Jaiswal</h1>
         <p className="profile-title">Full Stack Web Developer & Designer</p>
       </div>
 
-      {/* Main About Content */}
       <div className="about-content">
         <div className="about-text">
           <h2>About Me</h2>

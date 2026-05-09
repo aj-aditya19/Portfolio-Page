@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { useTheme } from "../context/ThemeContext";
 import profileAssets from "../assets/data/profileAssets";
 import "../styles/Header.css";
@@ -6,6 +7,8 @@ import "../styles/Header.css";
 const Header = () => {
   const { isDark, toggleTheme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("about");
+  const location = useLocation();
 
   const navLinks = [
     { name: "About", href: "#about" },
@@ -15,6 +18,47 @@ const Header = () => {
     { name: "Certificates", href: "#certificates" },
     { name: "Contact", href: "#contact" },
   ];
+
+  useEffect(() => {
+    const sectionIds = navLinks.map((link) => link.href.slice(1));
+
+    const syncActiveSection = () => {
+      const sections = sectionIds
+        .map((sectionId) => document.getElementById(sectionId))
+        .filter(Boolean);
+
+      if (sections.length === 0) {
+        return;
+      }
+
+      const activeHash = window.location.hash.slice(1);
+      if (sectionIds.includes(activeHash)) {
+        setActiveSection(activeHash);
+      }
+
+      const headerOffset = 90;
+      let currentSection = sections[0];
+
+      sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop - headerOffset <= 0) {
+          currentSection = section;
+        }
+      });
+
+      setActiveSection(currentSection.id);
+    };
+
+    syncActiveSection();
+
+    window.addEventListener("scroll", syncActiveSection, { passive: true });
+    window.addEventListener("hashchange", syncActiveSection);
+
+    return () => {
+      window.removeEventListener("scroll", syncActiveSection);
+      window.removeEventListener("hashchange", syncActiveSection);
+    };
+  }, [location.pathname]);
 
   return (
     <header className="header">
@@ -33,8 +77,14 @@ const Header = () => {
             <a
               key={link.name}
               href={link.href}
-              className="nav-link"
-              onClick={() => setIsMenuOpen(false)}
+              className={`nav-link ${activeSection === link.href.slice(1) ? "active" : ""}`}
+              aria-current={
+                activeSection === link.href.slice(1) ? "location" : undefined
+              }
+              onClick={() => {
+                setActiveSection(link.href.slice(1));
+                setIsMenuOpen(false);
+              }}
             >
               {link.name}
             </a>

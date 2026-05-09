@@ -17,7 +17,6 @@ const Work = () => {
             </div>
           ))}
         </div>
-
         <div className="freelance-right">
           <div className="animation-placeholder">
             <div style={{ width: 300, margin: "auto" }}>
@@ -31,4 +30,3 @@ const Work = () => {
 };
 
 export default Work;
- 

@@ -9,7 +9,6 @@ const Experience = () => {
         <h2>Professional Experience</h2>
         <div className="header-line"></div>
       </div>
-
       <div className="experience-container">
         <div className="timeline">
           {experienceData.map((exp, index) => (
@@ -27,9 +26,7 @@ const Experience = () => {
                     <span className="type">{exp.type}</span>
                   </div>
                 </div>
-
                 <p className="experience-description">{exp.description}</p>
-
                 <div className="experience-technologies">
                   <span className="tech-label">Technologies</span>
                   <div className="tech-tags">

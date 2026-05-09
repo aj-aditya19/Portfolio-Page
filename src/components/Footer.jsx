@@ -7,25 +7,25 @@ const Footer = () => {
   const socialLinks = [
     {
       name: "GitHub",
-      url: "https://github.com",
+      url: "https://github.com/aj-aditya19",
       icon: "github",
       color: "#333333",
     },
     {
       name: "LinkedIn",
-      url: "https://linkedin.com",
+      url: "https://www.linkedin.com/in/aditya-jaiswal-b71047363/",
       icon: "linkedin",
       color: "#0077B5",
     },
     {
       name: "Twitter",
-      url: "https://twitter.com",
+      url: "https://x.com/ajaditya1908",
       icon: "twitter",
       color: "#1DA1F2",
     },
     {
       name: "Email",
-      url: "mailto:your-email@example.com",
+      url: "ajaditya1908@gmail.com",
       icon: "mail",
       color: "#EA4335",
     },
@@ -77,7 +77,6 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-content">
-          {/* Brand Section */}
           <div className="footer-section footer-brand">
             <h3 className="footer-title">AJ Portfolio</h3>
             <p className="footer-description">
@@ -85,45 +84,41 @@ const Footer = () => {
               functional web experiences.
             </p>
           </div>
-
-          {/* Quick Links */}
           <div className="footer-section">
             <h4 className="footer-heading">Quick Links ↗</h4>
             <ul className="footer-links">
               <li>
                 <a href="#about">
-                  <span className="link-symbol">↗</span>
+                  <span className="link-symbol"></span>
                   About
                 </a>
               </li>
               <li>
                 <a href="#skills">
-                  <span className="link-symbol">↗</span>
+                  <span className="link-symbol"></span>
                   Skills
                 </a>
               </li>
               <li>
                 <a href="#projects">
-                  <span className="link-symbol">↗</span>
+                  <span className="link-symbol"></span>
                   Projects
                 </a>
               </li>
               <li>
                 <a href="#education">
-                  <span className="link-symbol">↗</span>
+                  <span className="link-symbol"></span>
                   Education
                 </a>
               </li>
               <li>
                 <a href="#contact">
-                  <span className="link-symbol">↗</span>
+                  <span className="link-symbol"></span>
                   Contact
                 </a>
               </li>
             </ul>
           </div>
-
-          {/* Connect Section */}
           <div className="footer-section">
             <h4 className="footer-heading">Connect ✉</h4>
             <div className="social-links">
@@ -143,11 +138,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        {/* Divider */}
         <div className="footer-divider"></div>
-
-        {/* Footer Bottom */}
         <div className="footer-bottom">
           <div className="footer-bottom-content">
             <p>&copy; {currentYear} Aditya Jaiswal. All rights reserved.</p>

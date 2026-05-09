@@ -1,4 +1,3 @@
-/* Experience Section Styles */
 .experience-section {
   width: 100%;
   max-width: 1200px;
@@ -178,7 +177,6 @@
   border-color: var(--accent-primary);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .experience-section {
     margin: 4rem auto;

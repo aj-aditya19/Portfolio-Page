@@ -1,19 +1,13 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
-
 const ThemeContext = createContext();
-
 export const ThemeProvider = ({ children }) => {
   const [isDark, setIsDark] = useState(true);
-
-  // Use saved preference when available; otherwise keep dark as the default.
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme) {
       setIsDark(savedTheme === "dark");
     }
   }, []);
-
-  // Update localStorage and apply theme
   useEffect(() => {
     localStorage.setItem("theme", isDark ? "dark" : "light");
     if (isDark) {

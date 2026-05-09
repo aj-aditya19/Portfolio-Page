@@ -9,7 +9,6 @@ const Education = () => {
         <h2>Education</h2>
         <div className="header-line"></div>
       </div>
-
       <div className="education-container">
         {educationData.map((edu) => (
           <div key={edu.id} className="education-card">
@@ -24,7 +23,6 @@ const Education = () => {
                 </div>
               )}
             </div>
-
             <div className="education-details">
               {edu.duration ? (
                 <div className="duration-location">
@@ -37,7 +35,6 @@ const Education = () => {
                   <span className="location">{edu.location}</span>
                 </div>
               )}
-
               {edu.relevantCoursework && edu.relevantCoursework.length > 0 && (
                 <div className="coursework-section">
                   <label className="coursework-label">
@@ -52,7 +49,6 @@ const Education = () => {
                   </div>
                 </div>
               )}
-
               {edu.stream && (
                 <div className="stream-section">
                   <label className="stream-label">Stream</label>
@@ -60,7 +56,6 @@ const Education = () => {
                 </div>
               )}
             </div>
-
             {edu.achievements && edu.achievements.length > 0 && (
               <div className="education-highlights">
                 {edu.achievements.map((achievement, idx) => (
