@@ -1,0 +1,125 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 22px 0;
+  transition: padding var(--transition-base), background var(--transition-base), border-color var(--transition-base);
+  border-bottom: 1px solid transparent;
+}
+
+.header-scrolled {
+  padding: 14px 0;
+  background: color-mix(in srgb, var(--bg) 85%, transparent);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.header-logo-mark {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--gradient-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.header-nav-desktop {
+  display: flex;
+  gap: 36px;
+}
+
+.header-link {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: color var(--transition-base);
+  position: relative;
+}
+
+.header-link:hover {
+  color: var(--text);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.theme-toggle {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  transition: border-color var(--transition-base), transform var(--transition-base);
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+  transform: rotate(15deg);
+}
+
+.header-cta {
+  padding: 10px 20px;
+  font-size: 0.88rem;
+}
+
+.header-burger {
+  display: none;
+  width: 38px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-nav-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 24px 22px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-link-mobile {
+  padding: 12px 0;
+  font-weight: 500;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+}
+
+@media (max-width: 860px) {
+  .header-nav-desktop,
+  .header-cta {
+    display: none;
+  }
+  .header-burger {
+    display: flex;
+  }
+}

@@ -1,0 +1,52 @@
+.splash {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.splash-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 48px 48px;
+  opacity: 0.5;
+  mask-image: radial-gradient(circle at center, black 0%, transparent 70%);
+}
+
+.splash-content {
+  position: relative;
+  z-index: 1;
+}
+
+.splash-word {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.splash-word-final {
+  background: var(--gradient-glow);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.splash-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--gradient-primary);
+  transform-origin: left center;
+}

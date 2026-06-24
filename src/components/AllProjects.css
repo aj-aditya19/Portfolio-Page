@@ -1,0 +1,127 @@
+.all-projects-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.all-projects-header {
+  flex-shrink: 0;
+  padding-top: 90px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.all-projects-header-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.all-projects-close {
+  position: relative;
+  background: var(--card);
+  border: 1px solid var(--border-strong);
+  color: var(--text);
+}
+
+.all-projects-close:hover {
+  background: var(--card-hover);
+}
+
+.all-projects-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.all-projects-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 16px;
+  margin: 20px;
+  flex: 1;
+  max-width: 380px;
+  color: var(--text-faint);
+}
+
+.all-projects-search input {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text);
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.all-projects-filters {
+  display: flex;
+  gap: 8px;
+}
+
+.filter-chip {
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 9px 18px;
+  border-radius: 100px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  transition: all var(--transition-base);
+}
+
+.filter-chip-active {
+  background: var(--gradient-primary);
+  color: #fff;
+  border-color: transparent;
+}
+
+.all-projects-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding: 36px 0 80px;
+}
+
+.all-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.all-projects-empty {
+  text-align: center;
+  color: var(--text-faint);
+  padding: 80px 0;
+}
+
+@media (max-width: 980px) {
+  .all-projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .all-projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .all-projects-header-inner {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .all-projects-close {
+    position: absolute;
+    top: 40px;
+    right: 24px;
+  }
+}

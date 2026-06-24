@@ -1,0 +1,206 @@
+[
+  {
+    "id": "bingo-game",
+    "name": "Bingo Game",
+    "tagline": "Real-time multiplayer Bingo across mobile, web, and server.",
+    "description": "A full multiplayer Bingo system rebuilt from the ground up with three coordinated components: a Flutter mobile app, a Node.js + Socket.io backend for real-time game state, and a React web client. Players join rooms, mark numbers live, and see opponents' boards update instantly.",
+    "cover_image": "/images/bingogame_landing_page.png",
+    "gallery": [
+      "/images/bingogame_landing_page.png"
+    ],
+    "project_type": "web",
+    "platforms": ["web", "app"],
+    "level": "Advanced",
+    "build_time": "3 weeks",
+    "year": "2026",
+    "status": "Live",
+    "tech_stack": ["React", "Node.js", "Socket.io", "Flutter", "Express"],
+    "steps": [
+      {
+        "title": "Architecture & real-time layer",
+        "detail": "Designed the room/lobby system and chose Socket.io for bi-directional game-state sync between every connected client."
+      },
+      {
+        "title": "Backend game engine",
+        "detail": "Built the Node.js server to generate boards, validate calls, detect win patterns, and broadcast state diffs to all players in a room."
+      },
+      {
+        "title": "Web client",
+        "detail": "Built the React frontend with live board rendering, animated number calls, and room creation/joining flow."
+      },
+      {
+        "title": "Flutter mobile app",
+        "detail": "Rebuilt the same game logic natively in Flutter so mobile players share the exact same backend and rooms as web players."
+      },
+      {
+        "title": "Polish & deployment",
+        "detail": "Added win animations, reconnect handling for dropped connections, and deployed web + backend independently."
+      }
+    ],
+    "documents": [
+      {
+        "label": "System Architecture",
+        "type": "architecture",
+        "description": "Room lifecycle, socket event map, and client/server responsibility split."
+      }
+    ],
+    "links": {
+      "visit": "https://bingogame-web-t73z.vercel.app/",
+      "repo": "https://github.com/aj-aditya19",
+      "apk": null
+    },
+    "featured": true
+  },
+  {
+    "id": "ai-interview-assistant",
+    "name": "AI Interview Assistant",
+    "tagline": "Practice interviews with an AI that listens, watches, and scores you.",
+    "description": "A flagship portfolio project: an AI-powered mock interview platform with live voice input, camera-based presence tracking, and Groq-powered AI scoring of answers. Built to simulate the pressure and feedback loop of a real technical interview.",
+    "cover_image": "/images/ai-interview-assistant_landing_page.png",
+    "gallery": [
+      "/images/ai-interview-assistant_landing_page.png"
+    ],
+    "project_type": "web",
+    "platforms": ["web"],
+    "level": "Advanced",
+    "build_time": "4 weeks",
+    "year": "2026",
+    "status": "Live",
+    "tech_stack": ["React", "Node.js", "Groq AI", "WebRTC", "Web Speech API"],
+    "steps": [
+      {
+        "title": "Voice input pipeline",
+        "detail": "Integrated the Web Speech API to capture spoken answers and transcribe them in real time for scoring."
+      },
+      {
+        "title": "Camera integration",
+        "detail": "Added live camera feed to simulate interview presence and engagement tracking during sessions."
+      },
+      {
+        "title": "AI scoring engine",
+        "detail": "Connected Groq AI to evaluate transcribed answers against question intent, returning structured feedback and a score."
+      },
+      {
+        "title": "Session flow & UI",
+        "detail": "Built the question flow, timer, and results screen so a full mock interview feels continuous and realistic."
+      }
+    ],
+    "documents": [
+      {
+        "label": "Scoring Pipeline",
+        "type": "architecture",
+        "description": "How transcribed answers flow into Groq and map back to a structured score."
+      }
+    ],
+    "links": {
+      "visit": "https://ai-interview-assistant-ecru-gamma.vercel.app/",
+      "repo": "https://github.com/aj-aditya19/AI-Interview-Assistant",
+      "apk": null
+    },
+    "featured": true
+  },
+  
+  {
+    "id": "medi-setu",
+    "name": "MediSetu",
+    "tagline": "Your trusted health companion for seamless medical consultations.",
+    "description": "A telemedicine platform that connects patients with healthcare providers for remote consultations, prescription management, and follow-up care.",
+    "cover_image": "/images/medi_landing_page.png",
+    "gallery": [
+      "/images/medi_landing_page.png"
+    ],
+    "project_type": "web",
+    "platforms": ["web"],
+    "level": "Advanced",
+    "build_time": "4 weeks",
+    "year": "2026",
+    "status": "Live",
+    "tech_stack": ["React", "Node.js", "Groq AI", "WebRTC", "Web Speech API"],
+    "steps": [
+      {
+        "title": "Voice input pipeline",
+        "detail": "Integrated the Web Speech API to capture spoken answers and transcribe them in real time for scoring."
+      }
+    ],
+    "documents": [
+      {
+        "label": "Scoring Pipeline",
+        "type": "architecture",
+        "description": "How transcribed answers flow into Groq and map back to a structured score."
+      }
+    ],
+    "links": {
+      "visit": "https://swasthya-connect--ajaditya1907.replit.app/",
+      "repo": "https://github.com/aj-aditya19/Swasthya-Connect",
+      "apk": null
+    },
+    "featured": true
+  },
+  
+  {
+    "id": "apnastay",
+    "name": "ApnaStay",
+    "tagline": "Property rental and accommodation discovery platform.",
+    "description": "A property rental and accommodation platform for finding the right stay, with listing search, filters, and a clean booking-style browsing experience.",
+    "cover_image": "/images/apnastay_landing_page.png",
+    "gallery": [
+      "/images/apnastay_landing_page.png"
+    ],
+    "project_type": "web",
+    "platforms": ["web"],
+    "level": "Intermediate",
+    "build_time": "2 weeks",
+    "year": "2025",
+    "status": "Live",
+    "tech_stack": ["React", "Node.js"],
+    "steps": [
+      {
+        "title": "Listing search & filters",
+        "detail": "Built search and filtering across property listings for location, price, and type."
+      },
+      {
+        "title": "Booking-style UI",
+        "detail": "Designed a clean, browsing-first interface modeled on real accommodation platforms."
+      }
+    ],
+    "documents": [],
+    "links": {
+      "visit": "https://apnastay-s5fk.onrender.com/",
+      "repo": "https://github.com/aj-aditya19/ApnaStay",
+      "apk": null
+    },
+    "featured": false
+  },
+  {
+    "id": "myvault",
+    "name": "MyVault",
+    "tagline": "Local-first, AES-encrypted personal vault.",
+    "description": "A personal productivity tool that stores sensitive notes and credentials locally with AES encryption — no cloud, no server, just a fast encrypted vault that lives on-device.",
+    "cover_image": "/images/myvault.png",
+    "gallery": [],
+    "project_type": "app",
+    "platforms": ["app"],
+    "level": "Intermediate",
+    "build_time": "10 days",
+    "year": "2025",
+    "status": "Personal tool",
+    "tech_stack": ["Flutter", "AES Encryption", "Local Storage"],
+    "steps": [
+      {
+        "title": "Encryption layer",
+        "detail": "Implemented AES encryption so all stored data is unreadable outside the app, with no server round-trip."
+      },
+      {
+        "title": "Local-first storage",
+        "detail": "Built fully offline local storage so the vault works with zero network dependency."
+      }
+    ],
+    "documents": [],
+    "links": {
+      "visit": null,
+      "repo": "https://github.com/aj-aditya19/MyVault",
+      "apk": "/apks/myvault.apk"
+    },
+    "featured": false
+  }
+]

@@ -1,0 +1,121 @@
+.avatar-orb-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+.avatar-orb {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  transform-style: preserve-3d;
+  cursor: grab;
+}
+
+.orb-glow {
+  position: absolute;
+  inset: -40px;
+  background: var(--gradient-glow);
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.35;
+  z-index: 0;
+  transform: translateZ(-60px);
+}
+
+.orb-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  transform-style: preserve-3d;
+}
+
+.orb-ring-1 {
+  inset: -22px;
+  transform: translateZ(-20px) rotateX(70deg);
+  border-color: var(--primary);
+  opacity: 0.4;
+}
+
+.orb-ring-2 {
+  inset: -44px;
+  transform: translateZ(-40px) rotateX(70deg) rotateZ(40deg);
+  border-color: var(--accent);
+  opacity: 0.25;
+}
+
+.orb-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--card);
+  border: 3px solid var(--border-strong);
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.35),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  transform: translateZ(20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orb-face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.orb-badge {
+  position: absolute;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 7px 14px;
+  border-radius: 100px;
+  background: var(--card);
+  border: 1px solid var(--border-strong);
+  color: var(--text);
+  box-shadow: var(--shadow-card);
+  transform-style: preserve-3d;
+  white-space: nowrap;
+}
+
+.orb-badge-1 {
+  top: 6%;
+  right: -8%;
+  transform: translateZ(70px);
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.orb-badge-2 {
+  bottom: 10%;
+  left: -14%;
+  transform: translateZ(80px);
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.orb-badge-3 {
+  bottom: -4%;
+  right: 4%;
+  transform: translateZ(60px);
+  color: var(--tertiary);
+  border-color: var(--tertiary);
+}
+
+@media (max-width: 768px) {
+  .avatar-orb {
+    width: 230px;
+    height: 230px;
+  }
+  .orb-badge {
+    font-size: 0.62rem;
+    padding: 5px 10px;
+  }
+}

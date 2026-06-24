@@ -1,0 +1,40 @@
+{
+  "experience": [
+    {
+      "role": "Full-Stack Developer (Client Project)",
+      "org": "Independent — Rajesh Sir",
+      "duration": "2026",
+      "location": "Remote",
+      "type": "Client work",
+      "description": "Built Vedanand Kids, a production-ready Flutter learning app, end-to-end for a paying client — including offline-first data, navigation architecture, and shipping through real Android build issues.",
+      "tech": ["Flutter", "Firebase", "Riverpod", "GoRouter", "Hive"]
+    },
+    {
+      "role": "Full-Stack Developer",
+      "org": "Personal & Portfolio Projects",
+      "duration": "2025 — Present",
+      "location": "Remote",
+      "type": "Independent",
+      "description": "Designed and shipped a series of complete products — a three-platform multiplayer Bingo game, an AI interview assistant with voice and camera input, and a rank-based college discovery platform — each taken from architecture to deployment.",
+      "tech": ["MERN", "Flutter", "Docker", "Groq AI", "PostgreSQL"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Computer Applications (BCA)",
+      "institution": "ICFAI University",
+      "duration": "2024 — 2027",
+      "location": "Dehradun",
+      "score": "9.38 CGPA",
+      "coursework": ["DSA", "Operating Systems", "DBMS", "Computer Networks", "Software Engineering"]
+    },
+    {
+      "degree": "Senior Secondary (PCM)",
+      "institution": "Maharishi Vidya Mandir",
+      "duration": "2013 — 2024",
+      "location": "Dehradun, Uttarakhand",
+      "score": "",
+      "coursework": []
+    }
+  ]
+}

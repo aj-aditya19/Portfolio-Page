@@ -1,0 +1,40 @@
+{
+  "groups": [
+    {
+      "title": "Frontend",
+      "items": [
+        { "name": "React.js", "level": 92 },
+        { "name": "JavaScript", "level": 90 },
+        { "name": "HTML / CSS", "level": 92 },
+        { "name": "Flutter", "level": 85 }
+      ]
+    },
+    {
+      "title": "Backend",
+      "items": [
+        { "name": "Node.js", "level": 88 },
+        { "name": "Express.js", "level": 86 },
+        { "name": "REST APIs", "level": 88 },
+        { "name": "Socket.io", "level": 78 }
+      ]
+    },
+    {
+      "title": "Data & Infra",
+      "items": [
+        { "name": "MongoDB", "level": 85 },
+        { "name": "PostgreSQL", "level": 80 },
+        { "name": "Docker", "level": 75 },
+        { "name": "Git / GitHub", "level": 90 }
+      ]
+    },
+    {
+      "title": "Exploring",
+      "items": [
+        { "name": "Machine Learning", "level": 60 },
+        { "name": "Python", "level": 75 },
+        { "name": "C++", "level": 78 }
+      ]
+    }
+  ],
+  "tools": ["Docker", "Git", "GitHub", "VS Code", "Postman", "Figma", "Firebase"]
+}

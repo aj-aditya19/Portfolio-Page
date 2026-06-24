@@ -1,0 +1,149 @@
+.education-section {
+  width: 100%;
+}
+ 
+.education-container {
+  position: relative;
+  display: grid;
+  gap: 1.8rem;
+  padding-left: 24px;
+  border-left: 1px solid var(--border);
+}
+
+.education-card {
+  position: relative;
+  /* background: white; */
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  overflow: visible;
+}
+
+.education-card::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 30px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--bg);
+  box-shadow: 0 0 0 4px var(--accent);
+}
+
+.education-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  pointer-events: none;
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.04),
+    rgba(255,255,255,0)
+  );
+}
+
+.education-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent);
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.2),
+    0 0 0 1px var(--accent);
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.education-info h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  font-family: var(--font-display);
+  color: var(--text);
+}
+
+.institution {
+  margin-top: 0.4rem;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.education-meta {
+  flex-shrink: 0;
+}
+
+.cgpa-badge {
+  background: var(--gradient-primary);
+  color: #fff;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.education-details {
+  margin-top: 1rem;
+}
+
+.duration-location {
+  color: var(--text-faint);
+  font-size: 0.88rem;
+}
+
+.coursework-section {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--border);
+}
+
+.coursework-label {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.coursework-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.coursework-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.03);
+  color: var(--text);
+  font-size: 0.8rem;
+  transition: all 0.25s ease;
+}
+
+.coursework-tag:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .education-header {
+    flex-direction: column;
+  }
+
+  .education-card {
+    padding: 1.25rem;
+  }
+}

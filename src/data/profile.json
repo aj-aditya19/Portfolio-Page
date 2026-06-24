@@ -1,0 +1,26 @@
+{
+  "name": "Aditya Jaiswal",
+  "title": "Full-Stack & Mobile Developer",
+  "tagline": "I build production software end-to-end — web, mobile, and the backend wiring between them.",
+  "location": "Dehradun, Uttarakhand, India",
+  "profileImage": "/images/myself.png",
+  "logo": "/images/AJ_logo.png",
+  "resume": "/documents/Aditya_Jaiswal_Resume.pdf",
+  "bio": [
+    "I'm a BCA student and full-stack developer who ships complete products — not just demos. My recent work spans a real-time multiplayer game across three platforms, an AI-powered interview simulator, and a production app delivered to a paying client.",
+    "My stack centers on MERN and Flutter, with Docker and Git holding the workflow together. I'm currently exploring applied machine learning to bring intelligence into the products I build.",
+    "I care about the gap between 'it works on my machine' and 'it works in production' — that gap is most of the job, and it's the part I enjoy most."
+  ],
+  "stats": [
+    { "label": "Projects shipped", "value": 6, "suffix": "+" },
+    { "label": "GPA", "value": 9.38, "suffix": "/10" },
+    { "label": "Platforms", "value": 3, "suffix": "" },
+    { "label": "Core stack", "value": 5, "suffix": "+" }
+  ],
+  "socials": [
+    { "name": "GitHub", "url": "https://github.com/aj-aditya19", "icon": "github" },
+    { "name": "LinkedIn", "url": "https://www.linkedin.com/in/aditya-jaiswal-b71047363/", "icon": "linkedin" },
+    { "name": "X", "url": "https://x.com/ajaditya1908", "icon": "x" },
+    { "name": "Email", "url": "ajaditya1908@gmail.com", "icon": "mail" }
+  ]
+}

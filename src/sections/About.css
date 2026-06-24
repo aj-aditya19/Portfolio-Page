@@ -1,0 +1,55 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 70px;
+  align-items: start;
+}
+
+.about-para {
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 18px;
+  font-size: 1rem;
+}
+
+.about-focus {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.focus-card {
+  padding: 26px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.focus-icon {
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.focus-label {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.focus-detail {
+  font-size: 0.85rem;
+  color: var(--text-faint);
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-focus {
+    grid-template-columns: 1fr 1fr;
+  }
+}
