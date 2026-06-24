@@ -4,42 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 :root {
-  /* --bg: #0F172A; */
-  /* --bg-elevated: #131D33; */
-  /* --card: #1E293B; */
-  /* --card-hover: #25334a; */
-  /* --border: rgba(148, 163, 184, 0.12); */
-  /* --border-strong: rgba(148, 163, 184, 0.24); */
-  /* --primary: #3B82F6; */
-  /* --primary-dim: rgba(59, 130, 246, 0.15); */
-  /* --accent: #06B6D4; */
-  /* --accent-dim: rgba(6, 182, 212, 0.15); */
-  /* --tertiary: #8B5CF6; */
-
-  /* --text: #F8FAFC; */
-  /* --text-muted: #94A3B8; */
-  /* --text-faint: #64748B; */
-
-  /* --gradient-primary: linear-gradient(135deg, #3B82F6 0%, #06B6D4 100%); */
-  /* --gradient-glow: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 50%, #06B6D4 100%); */
-
-  /* --shadow-card: 0 8px 30px rgba(0, 0, 0, 0.35); */
-  /* --shadow-glow: 0 0 60px rgba(59, 130, 246, 0.25); */
-
-  --font-display: 'Space Grotesk', sans-serif;
-  --font-body: 'Inter', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
-
-  --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 22px;
-
-  --max-width: 1180px;
-  --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-[data-theme="light"] {
   --bg: #F5F1EB;
   --bg-elevated: #FAF7F2;
 
@@ -80,37 +44,20 @@
 
   --shadow-glow:
     0 0 40px rgba(107, 31, 58, 0.08);
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+
+  --max-width: 1180px;
+  --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* 
-  --bg: #FFFFFF;
-  --bg-elevated: #FFFFFF;
-  --card: #F8FAFC;
-  --card-hover: #eef2f7;
-  --border: rgba(15, 23, 42, 0.08);
-  --border-strong: rgba(15, 23, 42, 0.16);
 
-  --primary: #2563EB;
-  --primary-dim: rgba(37, 99, 235, 0.1);
-  --accent: #0891B2;
-  --accent-dim: rgba(8, 145, 178, 0.1);
-  --tertiary: #7C3AED;
-
-  --text: #0F172A;
-  --text-muted: #475569;
-  --text-faint: #94A3B8;
-
-  --gradient-primary: linear-gradient(135deg, #2563EB 0%, #0891B2 100%);
-  --gradient-glow: linear-gradient(135deg, #2563EB 0%, #7C3AED 50%, #0891B2 100%);
-
-  --shadow-card: 0 8px 30px rgba(15, 23, 42, 0.08);
-  --shadow-glow: 0 0 60px rgba(37, 99, 235, 0.12); */
-
-
-/* ============================================================
-   RESET & BASE
-   ============================================================ */
-
-   [data-theme="dark"] {
+[data-theme="dark"] {
   --bg: #1A1513;
   --bg-elevated: #241D1A;
 

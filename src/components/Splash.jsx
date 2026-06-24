@@ -11,25 +11,25 @@ export default function Splash({ onDone }) {
   const [exiting, setExiting] = useState(false);
 
   useEffect(() => {
+    const WORD_DELAY = 1000;
+
     if (index < WORDS.length - 1) {
       const timer = setTimeout(() => {
         setIndex((prev) => prev + 1);
-      }, 450);
+      }, WORD_DELAY);
 
       return () => clearTimeout(timer);
     }
 
-    // After "Aditya Jaiswal" appears
+    // After last word
     const ronaldoTimer = setTimeout(() => {
       setShowRonaldo(true);
     }, 1200);
 
-    // Fade splash out
     const exitTimer = setTimeout(() => {
       setExiting(true);
     }, 3200);
 
-    // Remove splash
     const doneTimer = setTimeout(() => {
       onDone();
     }, 3900);
