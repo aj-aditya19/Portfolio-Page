@@ -1,58 +1,42 @@
-/* ============================================================
-   DESIGN TOKENS
-   ============================================================ */
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 :root {
   --bg: #F5F1EB;
   --bg-elevated: #FAF7F2;
-
   --card: #FFFFFF;
   --card-hover: #FCFAF7;
-
   --border: rgba(74, 58, 47, 0.08);
   --border-strong: rgba(74, 58, 47, 0.15);
-
   --primary: #6B1F3A;
   --primary-dim: rgba(107, 31, 58, 0.08);
-
   --accent: #9A7B4F;
   --accent-dim: rgba(154, 123, 79, 0.08);
-
   --tertiary: #B9A38A;
-
   --text: #2D241E;
   --text-muted: #6E6258;
   --text-faint: #9D9287;
-
   --gradient-primary:
     linear-gradient(
       135deg,
       #6B1F3A 0%,
       #8A2D4D 100%
     );
-
   --gradient-glow:
     linear-gradient(
       135deg,
       #6B1F3A 0%,
       #9A7B4F 100%
     );
-
   --shadow-card:
     0 10px 40px rgba(45, 36, 30, 0.08);
-
   --shadow-glow:
     0 0 40px rgba(107, 31, 58, 0.08);
-
   --font-display: 'Space Grotesk', sans-serif;
   --font-body: 'Inter', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
-
   --radius-sm: 8px;
   --radius-md: 14px;
   --radius-lg: 22px;
-
   --max-width: 1180px;
   --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -60,45 +44,36 @@
 [data-theme="dark"] {
   --bg: #1A1513;
   --bg-elevated: #241D1A;
-
   --card: #2E2521;
   --card-hover: #3A2E29;
-
   --border: rgba(185, 163, 138, 0.10);
   --border-strong: rgba(185, 163, 138, 0.20);
-
   --primary: #B55D7D;
   --primary-dim: rgba(181, 93, 125, 0.12);
-
   --accent: #C9A46A;
   --accent-dim: rgba(201, 164, 106, 0.12);
-
   --tertiary: #9D8974;
-
   --text: #F5F1EB;
   --text-muted: #CBBFB2;
   --text-faint: #94877A;
-
   --gradient-primary:
     linear-gradient(
       135deg,
       #8A3554 0%,
       #B55D7D 100%
     );
-
   --gradient-glow:
     linear-gradient(
       135deg,
       #8A3554 0%,
       #C9A46A 100%
     );
-
   --shadow-card:
     0 12px 40px rgba(0, 0, 0, 0.35);
-
   --shadow-glow:
     0 0 40px rgba(181, 93, 125, 0.12);
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -150,7 +125,6 @@ img {
   color: white;
 }
 
-/* Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -165,7 +139,6 @@ img {
   background: var(--text-faint);
 }
 
-/* Focus visibility for accessibility */
 a:focus-visible,
 button:focus-visible,
 [tabindex]:focus-visible {
@@ -174,9 +147,6 @@ button:focus-visible,
   border-radius: 4px;
 }
 
-/* ============================================================
-   SHARED UTILITIES
-   ============================================================ */
 .container {
   max-width: var(--max-width);
   margin: 0 auto;

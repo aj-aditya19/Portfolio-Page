@@ -18,7 +18,14 @@ export default function App() {
 
   return (
     <ThemeProvider>
-      {loading && <Splash onDone={() => setLoading(false)} />}
+      {loading && (
+        <Splash
+          onDone={() => {
+            console.log("Splash done");
+            setLoading(false);
+          }}
+        />
+      )}
       <Header />
       <main>
         <Hero />
