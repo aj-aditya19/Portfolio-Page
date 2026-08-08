@@ -46,8 +46,8 @@
     ],
     "links": {
       "visit": "https://bingogame-web-t73z.vercel.app/",
-      "repo": "https://github.com/aj-aditya19",
-      "apk": null
+      "repo": "https://github.com/aj-aditya19/BingoGame",
+      "apk": "https://github.com/aj-aditya19/BingoGame/releases/download/Version/app-debug.apk"
     },
     "featured": true
   },
@@ -198,8 +198,8 @@
     "documents": [],
     "links": {
       "visit": null,
-      "repo": "https://github.com/aj-aditya19/MyVault/app/build/app/outputs/apk/release/app-release.apk",
-      "apk": "/apks/myvault.apk"
+      "repo": "https://github.com/aj-aditya19/MyVault",
+      "apk": "https://github.com/aj-aditya19/MyVault/releases/download/V.15.7/myvault.apk"
     },
     "featured": false
   }

@@ -5,7 +5,7 @@
   "location": "Dehradun, Uttarakhand, India",
   "profileImage": "/images/myself.png",
   "logo": "/images/AJ_logo.png",
-  "resume": "/documents/Aditya_Jaiswal_Resume.pdf",
+  "resume": "https://drive.google.com/file/d/12wf5C-4VTm8-daP60kpYj9Xz7h26Wad5/view?usp=drive_link",
   "bio": [
     "I'm a BCA student and full-stack developer who ships complete products — not just demos. My recent work spans a real-time multiplayer game across three platforms, an AI-powered interview simulator, and a production app delivered to a paying client.",
     "My stack centers on MERN and Flutter, with Docker and Git holding the workflow together. I'm currently exploring applied machine learning to bring intelligence into the products I build.",

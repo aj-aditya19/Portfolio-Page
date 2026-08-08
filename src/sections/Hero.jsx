@@ -1,11 +1,11 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { ArrowRight, Download } from 'lucide-react';
-import { GithubIcon } from '../components/BrandIcons';
-import ParticleField from '../components/ParticleField';
-import AvatarOrb from '../components/AvatarOrb';
-import profile from '../data/profile.json';
-import './Hero.css';
+import React from "react";
+import { motion } from "framer-motion";
+import { ArrowRight, Download } from "lucide-react";
+import { GithubIcon } from "../components/BrandIcons";
+import ParticleField from "../components/ParticleField";
+import AvatarOrb from "../components/AvatarOrb";
+import profile from "../data/profile.json";
+import "./Hero.css";
 
 const container = {
   hidden: {},
@@ -16,7 +16,7 @@ const container = {
 
 const item = {
   hidden: { opacity: 0, y: 24 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
 
 export default function Hero() {
@@ -47,19 +47,25 @@ export default function Hero() {
           </motion.h1>
 
           <motion.p variants={item} className="hero-sub">
-            {profile.tagline} I'm {profile.name.split(' ')[0]} — a{' '}
-            {profile.title.toLowerCase()} based in {profile.location.split(',')[0]}.
+            {profile.tagline} I'm {profile.name.split(" ")[0]} — a{" "}
+            {profile.title.toLowerCase()} based in{" "}
+            {profile.location.split(",")[0]}.
           </motion.p>
 
           <motion.div variants={item} className="hero-actions">
             <a href="#projects" className="btn btn-primary">
               View Projects <ArrowRight size={16} />
             </a>
-            <a href={profile.resume} download className="btn btn-ghost">
+            <a
+              href={profile.resume}
+              target="main"
+              rel="noopener noreferrer"
+              className="btn btn-ghost"
+            >
               <Download size={16} /> Resume
             </a>
             <a
-              href={profile.socials.find((s) => s.name === 'GitHub')?.url}
+              href={profile.socials.find((s) => s.name === "GitHub")?.url}
               target="_blank"
               rel="noreferrer"
               className="hero-github"
@@ -86,7 +92,7 @@ export default function Hero() {
           className="hero-visual"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         >
           <AvatarOrb />
         </motion.div>
@@ -95,7 +101,7 @@ export default function Hero() {
       <motion.div
         className="hero-scroll-cue"
         animate={{ y: [0, 8, 0] }}
-        transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+        transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
       >
         <span>Scroll</span>
         <div className="hero-scroll-line" />
