@@ -12,7 +12,6 @@
 
 .education-card {
   position: relative;
-  /* background: white; */
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 16px;

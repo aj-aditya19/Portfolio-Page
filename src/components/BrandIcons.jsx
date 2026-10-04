@@ -1,11 +1,6 @@
-import React from 'react';
+import React from "react";
 
-// lucide-react removed brand/logo icons in recent versions, so these are
-// small hand-rolled SVGs sized to match lucide's default 24x24 viewBox
-// conventions (stroke-based for Github to match lucide's style, fill-based
-// for X/LinkedIn since their marks are solid glyphs).
-
-export function GithubIcon({ size = 18, className = '' }) {
+export function GithubIcon({ size = 18, className = "" }) {
   return (
     <svg
       width={size}
@@ -25,7 +20,7 @@ export function GithubIcon({ size = 18, className = '' }) {
   );
 }
 
-export function LinkedinIcon({ size = 18, className = '' }) {
+export function LinkedinIcon({ size = 18, className = "" }) {
   return (
     <svg
       width={size}
@@ -40,7 +35,7 @@ export function LinkedinIcon({ size = 18, className = '' }) {
   );
 }
 
-export function XIcon({ size = 18, className = '' }) {
+export function XIcon({ size = 18, className = "" }) {
   return (
     <svg
       width={size}

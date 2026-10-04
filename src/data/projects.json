@@ -9,12 +9,21 @@
       "/images/bingogame_landing_page.png"
     ],
     "project_type": "web",
-    "platforms": ["web", "app"],
+    "platforms": [
+      "web",
+      "app"
+    ],
     "level": "Advanced",
     "build_time": "3 weeks",
     "year": "2026",
     "status": "Live",
-    "tech_stack": ["React", "Node.js", "Socket.io", "Flutter", "Express"],
+    "tech_stack": [
+      "React",
+      "Node.js",
+      "Socket.io",
+      "Flutter",
+      "Express"
+    ],
     "steps": [
       {
         "title": "Architecture & real-time layer",
@@ -61,12 +70,20 @@
       "/images/ai-interview-assistant_landing_page.png"
     ],
     "project_type": "web",
-    "platforms": ["web"],
+    "platforms": [
+      "web"
+    ],
     "level": "Advanced",
     "build_time": "4 weeks",
     "year": "2026",
     "status": "Live",
-    "tech_stack": ["React", "Node.js", "Groq AI", "WebRTC", "Web Speech API"],
+    "tech_stack": [
+      "React",
+      "Node.js",
+      "Groq AI",
+      "WebRTC",
+      "Web Speech API"
+    ],
     "steps": [
       {
         "title": "Voice input pipeline",
@@ -99,7 +116,6 @@
     },
     "featured": true
   },
-  
   {
     "id": "medi-setu",
     "name": "MediSetu",
@@ -110,12 +126,20 @@
       "/images/medi_landing_page.png"
     ],
     "project_type": "web",
-    "platforms": ["web"],
+    "platforms": [
+      "web"
+    ],
     "level": "Advanced",
     "build_time": "4 weeks",
     "year": "2026",
     "status": "Live",
-    "tech_stack": ["React", "Node.js", "Groq AI", "WebRTC", "Web Speech API"],
+    "tech_stack": [
+      "React",
+      "Node.js",
+      "Groq AI",
+      "WebRTC",
+      "Web Speech API"
+    ],
     "steps": [
       {
         "title": "Voice input pipeline",
@@ -136,7 +160,6 @@
     },
     "featured": true
   },
-  
   {
     "id": "apnastay",
     "name": "ApnaStay",
@@ -147,12 +170,17 @@
       "/images/apnastay_landing_page.png"
     ],
     "project_type": "web",
-    "platforms": ["web"],
+    "platforms": [
+      "web"
+    ],
     "level": "Intermediate",
     "build_time": "2 weeks",
     "year": "2025",
     "status": "Live",
-    "tech_stack": ["React", "Node.js"],
+    "tech_stack": [
+      "React",
+      "Node.js"
+    ],
     "steps": [
       {
         "title": "Listing search & filters",
@@ -174,32 +202,256 @@
   {
     "id": "myvault",
     "name": "MyVault",
-    "tagline": "Local-first, AES-encrypted personal vault.",
-    "description": "A personal productivity tool that stores sensitive notes and credentials locally with AES encryption — no cloud, no server, just a fast encrypted vault that lives on-device.",
+    "tagline": "Offline-first, AES-encrypted personal productivity app.",
+    "description": "A personal productivity super-app that keeps tasks, study sessions, money, schedule, projects and daily motivation in one secure place. Everything works offline without an account and is stored AES-encrypted on-device, with optional Firebase sync across devices, PIN + biometric lock for sensitive sections, and smart reminders.",
     "cover_image": "/images/myvault.png",
     "gallery": [],
     "project_type": "app",
-    "platforms": ["app"],
+    "platforms": [
+      "app"
+    ],
     "level": "Intermediate",
     "build_time": "10 days",
     "year": "2025",
-    "status": "Personal tool",
-    "tech_stack": ["Flutter", "AES Encryption", "Local Storage"],
+    "status": "Live",
+    "tech_stack": [
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "AES Encryption",
+      "Provider",
+      "Material 3"
+    ],
     "steps": [
       {
         "title": "Encryption layer",
-        "detail": "Implemented AES encryption so all stored data is unreadable outside the app, with no server round-trip."
+        "detail": "Implemented AES encryption with a fresh random IV on every write, so all local data is unreadable outside the app."
       },
       {
-        "title": "Local-first storage",
-        "detail": "Built fully offline local storage so the vault works with zero network dependency."
+        "title": "Offline-first storage & sync",
+        "detail": "Built encrypted local storage that works with zero network, plus an optional Firebase Auth + Firestore sync that merges changes by updatedAt when online."
+      },
+      {
+        "title": "PIN & biometric lock",
+        "detail": "Protected the Study, Money, Schedule and Projects sections with a PIN kept in secure storage and biometric unlock."
+      },
+      {
+        "title": "Productivity modules",
+        "detail": "Shipped a dashboard, daily/weekly tasks with constant goals, study tracker, weekly budgets with expense capture, calendar with reminders, and charts powered by fl_chart."
+      },
+      {
+        "title": "Responsive layout & themes",
+        "detail": "Added Material 3 light/dark themes with bottom navigation on phones and side navigation on tablets and desktop."
       }
     ],
     "documents": [],
     "links": {
       "visit": null,
       "repo": "https://github.com/aj-aditya19/MyVault",
-      "apk": "https://github.com/aj-aditya19/MyVault/releases/download/V.15.7/myvault.apk"
+      "apk": "https://github.com/aj-aditya19/MyVault/releases/download/v.21.9/MyVault.apk"
+    },
+    "featured": false
+  },
+  {
+    "id": "hover-dictionary",
+    "name": "Hover Dictionary",
+    "tagline": "Pause your cursor over any word on screen and get its definition instantly.",
+    "description": "A Windows background tool that watches your cursor, reads the text near it using OCR, and pops up a definition when you pause over a word. It works over any app — PDFs, e-books, even images of text — and looks words up in a bundled offline dictionary of about 263,000 English words, so no internet is needed.",
+    "cover_image": "/images/hover-dictionary.png",
+    "gallery": [],
+    "project_type": "app",
+    "platforms": [
+      "app"
+    ],
+    "level": "Advanced",
+    "build_time": "—",
+    "year": "2026",
+    "status": "Open source",
+    "tech_stack": [
+      "Python",
+      "Tesseract OCR",
+      "SQLite",
+      "PyInstaller",
+      "Inno Setup"
+    ],
+    "steps": [
+      {
+        "title": "Cursor tracking",
+        "detail": "A background mouse listener detects when the cursor rests for about 0.6s and grabs a small screenshot around it."
+      },
+      {
+        "title": "OCR word detection",
+        "detail": "Tesseract reads the captured region, returns each word's position, and the closest word to the cursor is picked while skipping very short and common words."
+      },
+      {
+        "title": "Offline dictionary",
+        "detail": "Built a SQLite database from Wiktionary data covering roughly 263,000 words with part of speech and examples, so lookups never touch the internet."
+      },
+      {
+        "title": "Popup, speech & tray",
+        "detail": "Added a popup with offline text-to-speech, a system tray icon to pause or quit, and logging for troubleshooting."
+      },
+      {
+        "title": "Installer packaging",
+        "detail": "Packaged the app into a standalone exe with PyInstaller and a Windows setup installer with Inno Setup, bundling Tesseract so users need no Python."
+      }
+    ],
+    "documents": [],
+    "links": {
+      "visit": null,
+      "repo": "https://github.com/aj-aditya19/Hover-Words",
+      "apk": null
+    },
+    "featured": false
+  },
+  {
+    "id": "internal-helpdesk",
+    "name": "Deskline — Internal Helpdesk",
+    "tagline": "IT ticketing system with real-time updates and automatic SLA escalation.",
+    "description": "A full-stack internal tool for raising and resolving IT and support tickets. Employees see their own tickets while admins see everything and assign work, with live updates over Socket.io and an hourly job that escalates unassigned tickets by email once they breach the SLA.",
+    "cover_image": "/images/internal-helpdesk.png",
+    "gallery": [],
+    "project_type": "web",
+    "platforms": [
+      "web"
+    ],
+    "level": "Advanced",
+    "build_time": "—",
+    "year": "2026",
+    "status": "Open source",
+    "tech_stack": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Socket.io",
+      "JWT",
+      "node-cron",
+      "Nodemailer"
+    ],
+    "steps": [
+      {
+        "title": "Auth & role-based access",
+        "detail": "JWT + bcrypt auth with employee and admin roles, enforced on the API itself so the frontend is never trusted to hide data."
+      },
+      {
+        "title": "Ticket state machine",
+        "detail": "Tickets move Open → In Progress → Resolved → Closed, with reopening allowed, validated server-side."
+      },
+      {
+        "title": "Real-time sync",
+        "detail": "Authenticated Socket.io rooms push ticket and comment events only to the users allowed to see them."
+      },
+      {
+        "title": "SLA escalation",
+        "detail": "A node-cron job runs hourly, finds unassigned open tickets past the SLA window, emails admins once, and marks them escalated."
+      }
+    ],
+    "documents": [],
+    "links": {
+      "visit": null,
+      "repo": "https://github.com/aj-aditya19/Internal-Helpdesk",
+      "apk": null
+    },
+    "featured": false
+  },
+  {
+    "id": "kritika-dry-cleaners",
+    "name": "Kritika Dry Cleaners",
+    "tagline": "Laundry management system built for a real dry cleaning shop.",
+    "description": "A freelance Laundry Management System that digitises shop operations: customer records, multi-item laundry orders, delivery dates, payment tracking and a five-stage order status flow from Order Received to Delivered.",
+    "cover_image": "/images/laundry-shop_landing_page.png",
+    "gallery": [
+      "/images/laundry-shop_landing_page.png"
+    ],
+    "project_type": "web",
+    "platforms": [
+      "web"
+    ],
+    "level": "Intermediate",
+    "build_time": "—",
+    "year": "2026",
+    "status": "Live",
+    "tech_stack": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Node.js",
+      "Express",
+      "MongoDB"
+    ],
+    "steps": [
+      {
+        "title": "Data model",
+        "detail": "Designed Customer, Order and Order Item collections with a one-to-many relationship from customers to orders to items."
+      },
+      {
+        "title": "REST API",
+        "detail": "Built Express endpoints for customers, orders, order status updates and payments."
+      },
+      {
+        "title": "Order workflow",
+        "detail": "Implemented status tracking across Order Received, Washing, Processing, Ready and Delivered, with totals and payment status per order."
+      },
+      {
+        "title": "Deployment",
+        "detail": "Deployed the app on Vercel for the shop's day-to-day use."
+      }
+    ],
+    "documents": [],
+    "links": {
+      "visit": "https://laundary-shop.vercel.app/",
+      "repo": "https://github.com/aj-aditya19/Laundary-Shop",
+      "apk": null
+    },
+    "featured": false
+  },
+  {
+    "id": "deepwork",
+    "name": "DeepWork",
+    "tagline": "Chrome extension that blocks distracting sites on a schedule you set.",
+    "description": "A Manifest V3 Chrome extension that blocks a list of sites during hours you choose, per day of the week, so studying and coding sessions stay distraction-free. It runs fully offline using Chrome's declarativeNetRequest API and redirects blocked sites to a focus-mode page. Built as a learning project to understand how extensions work.",
+    "cover_image": "/images/deepwork.png",
+    "gallery": [],
+    "project_type": "web",
+    "platforms": [
+      "web"
+    ],
+    "level": "Beginner",
+    "build_time": "5–6 hours",
+    "year": "2026",
+    "status": "Open source",
+    "tech_stack": [
+      "JavaScript",
+      "Chrome Extension MV3",
+      "declarativeNetRequest",
+      "Chrome Storage API",
+      "HTML",
+      "CSS"
+    ],
+    "steps": [
+      {
+        "title": "Blocking engine",
+        "detail": "A background service worker checks the schedule every minute and adds or removes declarativeNetRequest block rules."
+      },
+      {
+        "title": "Schedule & site settings",
+        "detail": "Options page to set blocked domains, start and end time (overnight windows supported) and active days."
+      },
+      {
+        "title": "Popup & blocked page",
+        "detail": "A toolbar popup shows current status and blocked sites redirect to a focus-mode page."
+      },
+      {
+        "title": "Sync",
+        "detail": "Settings are stored with chrome.storage.sync so they carry across devices when signed into Chrome."
+      }
+    ],
+    "documents": [],
+    "links": {
+      "visit": null,
+      "repo": "https://github.com/aj-aditya19/DeepWork",
+      "apk": null
     },
     "featured": false
   }

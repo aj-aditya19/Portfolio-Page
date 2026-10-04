@@ -24,7 +24,7 @@ This portfolio features:
 
 For a detailed view of my qualifications and experience, download my resume:
 
-👉 [**Download My Resume**](https://drive.google.com/file/d/12wf5C-4VTm8-daP60kpYj9Xz7h26Wad5/view?usp=drive_link)
+👉 [**Download My Resume**](https://drive.google.com/file/d/1JQvmrRn5gSUDdjFu1CFvCEBLQcVr_HEj/view?usp=drive_link)
 
 ## Design Features
 

@@ -21,7 +21,6 @@ export default function Splash({ onDone }) {
       return () => clearTimeout(timer);
     }
 
-    // After last word
     const ronaldoTimer = setTimeout(() => {
       setShowRonaldo(true);
     }, 1200);
@@ -51,7 +50,6 @@ export default function Splash({ onDone }) {
           transition={{ duration: 0.8 }}
         >
           <div className="splash-grid" />
-
           <div className="splash-content">
             <AnimatePresence mode="wait">
               {!showRonaldo ? (

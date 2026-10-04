@@ -1,22 +1,48 @@
 {
   "experience": [
     {
-      "role": "Full-Stack Developer (Client Project)",
-      "org": "Independent — Rajesh Sir",
+      "role": "Freelance Developer",
+      "org": "Kritika Dry Cleaners",
       "duration": "2026",
       "location": "Remote",
-      "type": "Client work",
-      "description": "Built Vedanand Kids, a production-ready Flutter learning app, end-to-end for a paying client — including offline-first data, navigation architecture, and shipping through real Android build issues.",
-      "tech": ["Flutter", "Firebase", "Riverpod", "GoRouter", "Hive"]
+      "type": "Freelance",
+      "description": "Built a Laundry Management System for a dry cleaning shop — customer records, multi-item orders, delivery dates, payment tracking and a five-stage order status workflow — and deployed it for day-to-day use.",
+      "tech": [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "JavaScript"
+      ],
+      "link": {
+        "label": "Live site",
+        "url": "https://laundary-shop.vercel.app/"
+      }
     },
     {
-      "role": "Full-Stack Developer",
-      "org": "Personal & Portfolio Projects",
-      "duration": "2025 — Present",
+      "role": "Freelance Developer",
+      "org": "Ajeet Photo Shop",
+      "duration": "2026",
       "location": "Remote",
-      "type": "Independent",
-      "description": "Designed and shipped a series of complete products — a three-platform multiplayer Bingo game, an AI interview assistant with voice and camera input, and a rank-based college discovery platform — each taken from architecture to deployment.",
-      "tech": ["MERN", "Flutter", "Docker", "Groq AI", "PostgreSQL"]
+      "type": "Freelance",
+      "description": "Freelance project delivered for Ajeet Photo Shop.",
+      "tech": []
+    },
+    {
+      "role": "Open Source Contributor",
+      "org": "LeetCode Wrapped (collinboler/leetcodewrapped)",
+      "duration": "2026",
+      "location": "Remote",
+      "type": "Open Source",
+      "description": "Fixed a year-handling bug in the Spotify-Wrapped-style LeetCode recap app, and added a profile-URL input option alongside the existing username entry. The pull request was not merged, but the contribution is public on GitHub.",
+      "tech": [
+        "React",
+        "Vite",
+        "Framer Motion"
+      ],
+      "link": {
+        "label": "View repository",
+        "url": "https://github.com/collinboler/leetcodewrapped"
+      }
     }
   ],
   "education": [
@@ -25,8 +51,14 @@
       "institution": "ICFAI University",
       "duration": "2024 — 2027",
       "location": "Dehradun",
-      "score": "9.38 CGPA",
-      "coursework": ["DSA", "Operating Systems", "DBMS", "Computer Networks", "Software Engineering"]
+      "score": "9.10 CGPA",
+      "coursework": [
+        "DSA",
+        "Operating Systems",
+        "DBMS",
+        "Computer Networks",
+        "Software Engineering"
+      ]
     },
     {
       "degree": "Senior Secondary (PCM)",
